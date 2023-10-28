@@ -19,7 +19,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px; /* 175% */
-    @apply text-skin-black-500 text-justify font-normal font-inter;
+    @apply text-skin-black-500 text-left  font-normal font-inter;
   }
 }
 .login_btn {
@@ -54,4 +54,28 @@ strong {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.subscribe_btn {
+  display: inline-flex;
+  padding: 14px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 64px;
+  background: var(
+    --Gradient-1,
+    linear-gradient(99deg, #69b3da 0%, #4aa3d3 100%)
+  );
+  box-shadow: 0px 3px 12px 0px rgba(74, 163, 211, 0.32);
+  color: var(--primary-0, #fff);
+  text-align: center;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  line-height: 150%; /* 24px */
+}
+.subscribe_btn:active {
+  opacity: 50%;
 }

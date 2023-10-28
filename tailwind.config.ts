@@ -17,6 +17,7 @@ const config: Config = {
           "black-500": "#636B6F",
           "black-300": "#969C9F",
           "blue-300": "#4AA3D3",
+          "blue-50": "#EDF6FB",
         },
       },
       fontFamily: {

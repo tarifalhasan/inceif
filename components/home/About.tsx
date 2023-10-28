@@ -5,7 +5,7 @@ import Container from "../Container";
 const About: FC = () => {
   return (
     <Container>
-      <div className="flex py-10 flex-col lg:flex-row items-center gap-10">
+      <div className="flex py-10 lg:py-28 flex-col lg:flex-row items-center gap-10">
         <div className="w-full lg:w-1/2">
           <Image
             src={"/about.png"}

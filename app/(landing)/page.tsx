@@ -1,6 +1,8 @@
 import About from "@/components/home/About";
 import Header from "@/components/home/Header";
 import Hero from "@/components/home/Hero";
+import KMNPortal from "@/components/home/KMNPortal";
+import Subscription from "@/components/home/Subscription";
 import Heading from "@/utils/Heading";
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Subscription />
+      <KMNPortal />
     </div>
   );
 }
