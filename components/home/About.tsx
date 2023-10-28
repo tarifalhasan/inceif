@@ -10,6 +10,7 @@ const About: FC = () => {
           <Image
             src={"/about.png"}
             alt="hero image"
+            priority
             width={470}
             height={541}
             sizes="(min-width: 1540px) 740px, (min-width: 1280px) 612px, (min-width: 1040px) 484px, (min-width: 780px) 752px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
