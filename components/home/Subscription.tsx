@@ -3,9 +3,9 @@ import Container from "../Container";
 
 const Subscription = () => {
   return (
-    <div className="pb-14 pt-10 lg:pb-24">
+    <div className="pb-10 pt-10 lg:pb-24">
       <Container>
-        <div className="space-y-8">
+        <div className="space-y-10 lg:space-y-0">
           <div className=" rounded-xl relative px-5 py-2 lg:px-14 bg-skin-blue-50 h-[361px]  gap-24 flex items-center">
             <div className=" max-w-[538px]  space-y-5">
               <h2 className=" text-[1.8rem] md:text-t-32 text-skin-black-900 font-inter font-bold">
