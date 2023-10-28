@@ -1,6 +1,6 @@
+import balls from "@/assets/llistator.png";
 import Image from "next/image";
 import Container from "../Container";
-
 const KMNPortal = () => {
   return (
     <div className="pb-14 relative pt-10 lg:pb-24">
@@ -40,13 +40,7 @@ const KMNPortal = () => {
         </div>
       </Container>
       <div className="absolute 2xl:block hidden right-0 top-10">
-        <Image
-          src={"/balls.png"}
-          alt="hero image"
-          width={470}
-          height={541}
-          sizes="(min-width: 1540px) 740px, (min-width: 1280px) 512px, (min-width: 1040px) 384px, (min-width: 780px) 552px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
-        />
+        <Image src={balls} alt="hero image" />
       </div>
     </div>
   );
