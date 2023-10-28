@@ -6,7 +6,7 @@ const About: FC = () => {
   return (
     <Container>
       <div className="flex py-10 lg:py-28 flex-col lg:flex-row items-center gap-10">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full  flex justify-center lg:w-1/2">
           <Image
             src={"/about.png"}
             alt="hero image"

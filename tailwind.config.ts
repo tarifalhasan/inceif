@@ -18,6 +18,7 @@ const config: Config = {
           "black-300": "#969C9F",
           "blue-300": "#4AA3D3",
           "blue-50": "#EDF6FB",
+          footer: "rgba(237, 246, 251, 0.60)",
         },
       },
       fontFamily: {
