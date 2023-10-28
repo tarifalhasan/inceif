@@ -73,22 +73,22 @@ const Footer = () => {
         </div>
         <ul className="flex pt-28 pb-7 items-center justify-center gap-x-4">
           <li>
-            <Link href="http://" target="_blank" rel="noopener noreferrer">
+            <Link href="http://www.tarifalhasan.verce.app" target="_blank">
               <FaFacebookSquare size={24} className="text-skin-blue-300" />
             </Link>
           </li>
           <li>
-            <Link href="http://" target="_blank" rel="noopener noreferrer">
+            <Link href="http://www.tarifalhasan.verce.app" target="_blank">
               <FaTwitter size={24} className="text-skin-blue-300" />
             </Link>
           </li>
           <li>
-            <Link href="http://" target="_blank" rel="noopener noreferrer">
+            <Link href="http://www.tarifalhasan.verce.app" target="_blank">
               <FaVimeoV size={24} className="text-skin-blue-300" />
             </Link>
           </li>
           <li>
-            <Link href="http://" target="_blank" rel="noopener noreferrer">
+            <Link href="http://www.tarifalhasan.verce.app" target="_blank">
               <FaYoutube size={24} className="text-skin-blue-300" />
             </Link>
           </li>
@@ -104,24 +104,22 @@ const Footer = () => {
               </strong>
               <ul className="flex  items-center gap-3">
                 <li>
-                  <a
-                    href="http://"
+                  <Link
+                    href="http://www.tarifalhasan.verce.app"
                     className="text-xs sm:text-sm hover:underline font-normal font-inter text-skin-black-500"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="http://"
+                  <Link
+                    href="http://www.tarifalhasan.verce.app"
                     className="text-xs sm:text-sm hover:underline font-normal font-inter text-skin-black-500"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

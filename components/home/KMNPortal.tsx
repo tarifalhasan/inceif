@@ -5,17 +5,17 @@ const KMNPortal = () => {
   return (
     <div className="pb-14 relative pt-10 lg:pb-24">
       <Container>
-        <div className="flex items-center flex-col lg:flex-row gap-14">
-          <div className=" order-last lg:order-first lg:w-1/2 w-full">
+        <div className="flex items-center flex-col lg:flex-row gap-7">
+          <div className=" lg:w-1/2 w-full">
             <Image
               src={"/kmc_portal.png"}
               alt="hero image"
-              className="block mx-auto"
-              width={500}
-              height={400}
+              width={600}
+              height={500}
+              sizes="(min-width: 1540px) 760px, (min-width: 1280px) 632px, (min-width: 1040px) 504px, (min-width: 780px) 752px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
             />
           </div>
-          <div className="order-first lg:order-last space-y-2 lg:space-y-5 lg:w-1/2 w-full">
+          <div className="space-y-5 w-1/2 lg:w-full">
             <h2 className="heading">KMC Portal</h2>
             <p className="description max-w-[538px]">
               Discover and get access to Islamic and Conventional Finance
@@ -43,9 +43,9 @@ const KMNPortal = () => {
         <Image
           src={"/balls.png"}
           alt="hero image"
-          className="block mx-auto"
           width={470}
           height={541}
+          sizes="(min-width: 1540px) 740px, (min-width: 1280px) 512px, (min-width: 1040px) 384px, (min-width: 780px) 552px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
         />
       </div>
     </div>

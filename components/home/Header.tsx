@@ -51,11 +51,9 @@ const Header: FC = () => {
         >
           <div className="flex items-center justify-between">
             <div>
-              <Link href={"/"}>
-                <strong className="text-t-32  font-bold font-open_sans">
-                  INCEIF.
-                </strong>
-              </Link>
+              <strong className="text-t-32  font-bold font-open_sans">
+                INCEIF.
+              </strong>
             </div>
             <IoClose
               onClick={() => setIsOpenMenu(false)}
@@ -65,17 +63,19 @@ const Header: FC = () => {
           </div>
           <ul className=" pt-9  flex flex-col items-center gap-7">
             <li onClick={() => setIsOpenMenu(false)}>
-              <Link href={"#contact-us"}>
-                <span className="text-base text-skin-black-900 font-inter font-semibold">
-                  Contact Us
-                </span>
+              <Link
+                href={"#contact-us"}
+                className="text-base text-skin-black-900 font-inter font-semibold"
+              >
+                Contact Us
               </Link>
             </li>
             <li onClick={() => setIsOpenMenu(false)}>
-              <Link href={"#contact-us"}>
-                <span className="text-base text-skin-black-900 font-inter font-semibold">
-                  Sign Up
-                </span>
+              <Link
+                href={"#contact-us"}
+                className="text-base text-skin-black-900 font-inter font-semibold"
+              >
+                Sign Up
               </Link>
             </li>
             <li onClick={() => setIsOpenMenu(false)}>

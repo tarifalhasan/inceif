@@ -18,11 +18,13 @@ const Hero = () => {
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">
             <Image
+              priority
               src={"/hero.png"}
               alt="hero image"
               width={650}
               className="w-full h-full object-cover block mx-auto"
               height={400}
+              sizes="(min-width: 1540px) 760px, (min-width: 1280px) 632px, (min-width: 1040px) 504px, (min-width: 780px) 752px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
             />
           </div>
         </div>
@@ -35,6 +37,8 @@ const Hero = () => {
           width={650}
           className="w-full h-full object-cover block mx-auto"
           height={400}
+          sizes="(min-width: 1540px) 760px, (min-width: 1280px) 632px, (min-width: 1040px) 504px, (min-width: 780px) 752px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
+          priority
         />
       </div>
     </div>
