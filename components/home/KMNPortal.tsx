@@ -6,7 +6,7 @@ const KMNPortal = () => {
     <div className="pb-14 relative pt-10 lg:pb-24">
       <Container>
         <div className="flex items-center flex-col lg:flex-row gap-7">
-          <div className=" lg:w-1/2 w-full">
+          <div className=" order-last lg:order-first lg:w-1/2 w-full">
             <Image
               src={"/kmc_portal.png"}
               alt="hero image"
@@ -15,7 +15,7 @@ const KMNPortal = () => {
               sizes="(min-width: 1540px) 760px, (min-width: 1280px) 632px, (min-width: 1040px) 504px, (min-width: 780px) 752px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
             />
           </div>
-          <div className="space-y-5 w-full lg:w-1/2">
+          <div className="space-y-5  order-first lg:order-last w-full lg:w-1/2">
             <h2 className="heading">KMC Portal</h2>
             <p className="description max-w-[538px]">
               Discover and get access to Islamic and Conventional Finance
