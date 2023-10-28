@@ -7,14 +7,7 @@ const About: FC = () => {
     <Container>
       <div className="flex py-10 lg:py-28 flex-col lg:flex-row items-center gap-10">
         <div className="w-full  flex justify-center lg:w-1/2">
-          <Image
-            src={"/about.png"}
-            alt="hero image"
-            priority
-            width={470}
-            height={541}
-            sizes="(min-width: 1540px) 740px, (min-width: 1280px) 612px, (min-width: 1040px) 484px, (min-width: 780px) 752px, (min-width: 640px) 624px, (min-width: 520px) 459px, calc(87.5vw + 22px)"
-          />
+          <Image src={"/about.png"} alt="hero image" width={470} height={541} />
         </div>
         <div className="w-full space-y-4 lg:w-1/2">
           <h2 className="heading">
