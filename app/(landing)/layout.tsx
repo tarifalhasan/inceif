@@ -1,5 +1,5 @@
 import { gilroy, inter, open_sans, playfair, poppins } from "@/utils/Fonts";
-import "./globals.css";
+import "../globals.css";
 
 export default function RootLayout({
   children,
