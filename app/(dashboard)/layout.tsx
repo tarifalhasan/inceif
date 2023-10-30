@@ -8,8 +8,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full">
-      <body className={`bg-skin-blue-50 ${inter.className} h-full `}>
+    <html lang="en">
+      <body className={`bg-skin-blue-50 ${inter.className} `}>
         <DashboardHeader />
         {children}
       </body>

@@ -111,27 +111,60 @@ const DashboardHeader: FC = () => {
             />
           </div>
           <ul className=" pt-9  flex flex-col items-center gap-7">
-            <li onClick={() => setIsOpenMenu(false)}>
-              <Link
-                href={"#contact-us"}
-                className="text-base text-skin-black-900 font-inter font-semibold"
-              >
-                Contact Us
-              </Link>
-            </li>
-            <li onClick={() => setIsOpenMenu(false)}>
-              <Link
-                href={"#contact-us"}
-                className="text-base text-skin-black-900 font-inter font-semibold"
-              >
-                Sign Up
-              </Link>
-            </li>
-            <li onClick={() => setIsOpenMenu(false)}>
-              <button className="login_btn">
-                <span>Log In</span>
-              </button>
-            </li>
+            {dashboardNavlinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.href}>
+                  <span className="text-base text-white font-inter font-semibold">
+                    {link.label}
+                  </span>
+                </Link>
+              </li>
+            ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="relative bg-white px-5 py-2 rounded-full focus:outline-none  inline-flex items-center  gap-1">
+                  <Avatar className="h-9 w-9">
+                    <AvatarImage src="/avatar.png" alt="@INCEIF" />
+                    <AvatarFallback>SC</AvatarFallback>
+                  </Avatar>
+                  <span className="text-base font-semibold text-skin-black-900 font-inter">
+                    John Doe
+                  </span>
+                  <FiChevronDown className="text-3xl text-skin-black-400" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56" align="end" forceMount>
+                <DropdownMenuLabel className="font-normal">
+                  <div className="flex flex-col space-y-1">
+                    <p className="text-sm font-medium leading-none">INCEIF</p>
+                    <p className="text-xs leading-none text-muted-foreground">
+                      m@example.com
+                    </p>
+                  </div>
+                </DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuGroup>
+                  <DropdownMenuItem>
+                    Profile
+                    <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Billing
+                    <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    Settings
+                    <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>New Team</DropdownMenuItem>
+                </DropdownMenuGroup>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  Log out
+                  <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </ul>
         </div>
       </Container>

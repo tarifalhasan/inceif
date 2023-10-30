@@ -1,6 +1,8 @@
+"use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import {
   RiFileList2Line,
   RiHistoryFill,
@@ -10,6 +12,8 @@ import {
   RiUser3Fill,
 } from "react-icons/ri";
 const Profile = () => {
+  const pathName = usePathname();
+  const router = useRouter();
   return (
     <div className="bg-white rounded-[20px]  py-6">
       <div className="flex items-center flex-col pt-12 gap-y-6">
@@ -75,8 +79,15 @@ const Profile = () => {
       <hr className="h-[1px] bg-skin-line-1 w-full my-10" />
       {/* navigation */}
 
-      <ul className="px-5 space-y-8 w-full">
-        <li className=" flex w-full cursor-pointer items-center gap-2">
+      <ul className=" w-full">
+        <li
+          onClick={() => router.push("my-account")}
+          className={cn(
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            pathName === "/dashboard/my-account" &&
+              "bg-skin-blue-50 before:bg-skin-blue-300"
+          )}
+        >
           <RiUser3Fill className={`text-2xl text-skin-black-400 block`} />
           <span
             className={cn(
@@ -86,7 +97,13 @@ const Profile = () => {
             My Account
           </span>
         </li>
-        <li className=" flex w-full cursor-pointer items-center gap-2">
+        <li
+          className={cn(
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            pathName === "/dashboard/change-password" &&
+              "bg-skin-blue-50 before:bg-skin-blue-300"
+          )}
+        >
           <RiLockFill className={cn("text-2xl text-skin-black-400 block")} />
           <span
             className={cn(
@@ -96,7 +113,13 @@ const Profile = () => {
             Change Password
           </span>
         </li>
-        <li className=" flex w-full cursor-pointer items-center gap-2">
+        <li
+          className={cn(
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            pathName === "/dashboard/my-activity" &&
+              "bg-skin-blue-50 before:bg-skin-blue-300"
+          )}
+        >
           <RiHistoryFill className={cn("text-2xl text-skin-black-400 block")} />
           <span
             className={cn(
@@ -106,7 +129,14 @@ const Profile = () => {
             My Activities
           </span>
         </li>
-        <li className=" flex w-full cursor-pointer items-center gap-2">
+        <li
+          onClick={() => router.push("my-subscription")}
+          className={cn(
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            pathName === "/dashboard/my-subscription" &&
+              "bg-skin-blue-50 before:bg-skin-blue-300"
+          )}
+        >
           <RiFileList2Line
             className={cn("text-2xl text-skin-black-400 block")}
           />
@@ -118,7 +148,13 @@ const Profile = () => {
             My Subscriptions
           </span>
         </li>
-        <li className=" flex w-full cursor-pointer items-center gap-2">
+        <li
+          className={cn(
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            pathName === "/dashboard/renew-subscription" &&
+              "bg-skin-blue-50 before:bg-skin-blue-300"
+          )}
+        >
           <RiLoader3Fill className={cn("text-2xl text-skin-black-400 block")} />
           <span
             className={cn(

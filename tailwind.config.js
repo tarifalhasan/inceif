@@ -21,8 +21,10 @@ module.exports = {
       },
       colors: {
         skin: {
+          "black-50": "#EFF0F1",
           "black-900": "#2A2D2F",
           "black-500": "#636B6F",
+          "black-600": "#5A6165",
           "black-700": "#464C4F",
           "black-300": "#969C9F",
           "black-400": "#82898C",
@@ -32,6 +34,7 @@ module.exports = {
           "gradient-1": "linear-gradient(99deg, #69B3DA 0%, #4AA3D3 100%)",
           "line-1": "#EFF0F1",
           "red-600": "#FF4848",
+          "green-600": "#2AB27B",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

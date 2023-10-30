@@ -2,12 +2,12 @@ import Container from "@/components/Container";
 import Profile from "@/components/dashboard/Profile";
 import Heading from "@/utils/Heading";
 
-const Dashboard = () => {
+const MyAccount = () => {
   return (
     <div>
       <Heading
-        title="Dashboard"
-        description=" Dashboard description and description for the dashboard component of the application"
+        title="MyAccount"
+        description=" MyAccount description and description for the MyAccount component of the application"
         kyeword="web developer " // you can customize your key
       />
       <Container>
@@ -24,4 +24,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default MyAccount;
