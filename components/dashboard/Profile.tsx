@@ -81,7 +81,7 @@ const Profile = () => {
 
       <ul className=" w-full">
         <li
-          onClick={() => router.push("my-account")}
+          onClick={() => router.push("/dashboard/my-account")}
           className={cn(
             "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
             pathName === "/dashboard/my-account" &&
@@ -130,7 +130,7 @@ const Profile = () => {
           </span>
         </li>
         <li
-          onClick={() => router.push("my-subscription")}
+          onClick={() => router.push("/dashboard/my-subscription")}
           className={cn(
             "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
             pathName === "/dashboard/my-subscription" &&
