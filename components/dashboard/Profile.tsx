@@ -83,17 +83,13 @@ const Profile = () => {
         <li
           onClick={() => router.push("/dashboard/my-account")}
           className={cn(
-            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px] text-skin-black-400",
             pathName === "/dashboard/my-account" &&
-              "bg-skin-blue-50 before:bg-skin-blue-300"
+              "bg-skin-blue-50 before:bg-skin-blue-300 text-skin-blue-300"
           )}
         >
-          <RiUser3Fill className={`text-2xl text-skin-black-400 block`} />
-          <span
-            className={cn(
-              "block text-base text-skin-black-400 font-medium font-inter"
-            )}
-          >
+          <RiUser3Fill className={`text-2xl  block`} />
+          <span className={cn("block text-base  font-medium font-inter")}>
             My Account
           </span>
         </li>
@@ -132,19 +128,13 @@ const Profile = () => {
         <li
           onClick={() => router.push("/dashboard/my-subscription")}
           className={cn(
-            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px]",
+            "flex w-full cursor-pointer px-4 items-center relative before:absolute before:left-0 before:h-[53px] before:w-[3px]  gap-2 h-[53px] text-skin-black-400",
             pathName === "/dashboard/my-subscription" &&
-              "bg-skin-blue-50 before:bg-skin-blue-300"
+              "bg-skin-blue-50 before:bg-skin-blue-300 text-skin-blue-300"
           )}
         >
-          <RiFileList2Line
-            className={cn("text-2xl text-skin-black-400 block")}
-          />
-          <span
-            className={cn(
-              "block text-base text-skin-black-400 font-medium font-inter"
-            )}
-          >
+          <RiFileList2Line className={cn("text-2xl  block")} />
+          <span className={cn("block text-base  font-medium font-inter")}>
             My Subscriptions
           </span>
         </li>
